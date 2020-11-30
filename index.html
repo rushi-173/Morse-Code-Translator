@@ -1,15 +1,30 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Morse Code Translator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Morse Code Translate</title>
 	<link rel="stylesheet" type="text/css" href="./style.css">
 </head>
 <body>
-<nav>
-	<h1>Morsecode Translator</h1>
-</nav>
-<textarea id="txtInput" placeholder="Enter your text here."></textarea>
-<button id="btn">Click here</button>
-<script type="text/javascript" src="./app.js"></script>
+	<center>
+	<nav class="navigation">
+		<h1 class="nav-logo">Speak like Minion</h1>
+	</nav>
+	<section>
+	<P><strong>Choose translation option👇</strong></P>
+	<select id="opt" name="act">
+	  <option value="EtoM">English to Morsecode</option>
+	  <option value="MtoE">Morsecode to English</option>
+	</select><br>
+	<textarea id="txtInput" placeholder="Enter your text here!"></textarea><br>
+	<button id="btn" class="link link-primary">Click to translate messege</button>
+	<p>Output will be shown here👇.</p>
+	<div id="divOut"></div>
+    </section>
+	<footer class="footer">
+		<p class="footer-title">Made with ❤️ by rushi.</p>
+	</footer>
+	</center>
+	<script type="text/javascript" src="./app.js"></script>
 </body>
 </html>

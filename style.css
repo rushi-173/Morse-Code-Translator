@@ -1,28 +1,76 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Morse Code Translate</title>
-	<link rel="stylesheet" type="text/css" href="./style.css">
-</head>
-<body>
-	<center>
-	<nav class="navigation">
-		<h1 class="nav-logo">Speak like Minion</h1>
-	</nav>
-	<section>
-	<P><strong>Choose translation option</strong></P>
-	<input type="radio" name="act" value="encrypt"><p>English to Morsecode</p>
-	<input type="radio" name="act" value="decrypt"><p>Morsecode to English</p>
-	<textarea id="txtInput" placeholder="Enter your text here!"></textarea><br>
-	<button id="btn" class="link link-primary">Translate to Minion's Language</button>
-	<p>Output will be shown here below👇.</p>
-	<div id="divOut"></div>
-    </section>
-	<footer class="footer">
-		<p class="footer-title">Made with ❤️ by rushi.</p>
-	</footer>
-	</center>
-	<script type="text/javascript" src="./app.js"></script>
-</body>
-</html>
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap');
+
+:root{
+	--primary-color:#0A0076;
+	--dark-grey:#424242;
+	--light-grey:#EEEEEE;
+}
+
+body{
+	font-family: 'Montserrat',sans-serif;
+	margin: 0px;
+}
+
+.link{
+	text-decoration: none;
+	padding: 0.5rem 1.7rem;
+	margin: 0.1rem;
+}
+
+.link-primary{
+	font-size: large;
+	background-color: var(--primary-color);
+	color: white;
+	border: 0.2rem solid var(--primary-color);
+	font-weight: 580;
+}
+
+.navigation{
+	background-color: var(--primary-color);
+	padding: 1rem 0.5rem;
+	color: white;
+}
+
+.navigation .nav-logo{
+	font-size: x-large;
+	font-weight: 600;
+	margin: 0rem 2rem;
+}
+
+#opt{
+	font-size: 1.1rem;
+	width: 300px;
+	border: 2px solid var(--primary-color);
+	color: var(--dark-grey);
+}
+
+textarea{
+	font-size: 1.3rem;
+	margin: 1rem;
+	padding: 1rem;
+	width: 300px;
+	height: 125px;
+	border: 2px solid var(--primary-color);
+	color: var(--dark-grey);
+}
+
+#divOut{
+	font-size: 1.3rem;
+	margin: 1rem;
+	padding: 1rem;
+	width: 300px;
+	height: 125px;
+	border: 2px solid var(--primary-color);
+	color: var(--dark-grey);	
+}
+
+.footer{
+	background-color: var(--primary-color);
+	padding: 0.1rem;
+}
+
+.footer-title{
+	font-size: 1rem;
+	color: white;
+	text-align: center;
+}
